@@ -1,0 +1,19 @@
+runtime: nodejs22
+env: flex
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 5
+
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
+
+env_variables:
+  NODE_ENV: 'production'
+  MYSQL_HOST: '34.101.117.66'
+  MYSQL_USER: 'root'
+  MYSQL_PASSWORD: ''
+  MYSQL_DATABASE: 'stuff'
+  JWT_SECRET: 'your_jwt_secret'
